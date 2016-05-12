@@ -1,0 +1,11 @@
+ApiBundle\Entity\User:
+    exclusion_policy: NONE
+    properties:
+        id:
+            type: integer
+        origin:
+            type: ApiBundle\Entity\Origin
+        createdAt:
+            type: DateTime
+        updatedAt:
+            type: DateTime

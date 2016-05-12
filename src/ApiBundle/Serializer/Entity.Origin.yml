@@ -1,0 +1,13 @@
+ApiBundle\Entity\Origin:
+    exclusion_policy: NONE
+    properties:
+        id:
+            type: integer
+        name:
+            type: string
+        createdAt:
+            type: DateTime
+            exclude: true
+        updatedAt:
+            type: DateTime
+            exclude: true
