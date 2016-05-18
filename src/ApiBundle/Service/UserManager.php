@@ -48,6 +48,9 @@ class UserManager extends BaseUserManager
         }
     }
 
+    /**
+     * {@InheritDoc}
+     */
     public function create(array $data)
     {
         $user = $this->createUser();
@@ -58,6 +61,9 @@ class UserManager extends BaseUserManager
         return $user;
     }
 
+    /**
+     * {@InheritDoc}
+     */
     public function update(UserInterface $user, array $data)
     {
         $this->setProperties($user, $data);
