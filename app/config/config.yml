@@ -81,3 +81,15 @@ fos_rest:
     body_listener: true
     view:
         view_response_listener: force
+    serializer:
+        serialize_null: true
+
+jms_serializer:
+    metadata:
+        directories:
+            Fenrir:
+                namespace_prefix: "ApiBundle"
+                path: "@ApiBundle/Serializer"
+            FosUser:
+                namespace_prefix: "FOS\\UserBundle"
+                path: "@ApiBundle/Serializer"
